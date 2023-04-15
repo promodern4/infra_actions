@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 
 
+# Коммент для проверки
 def index(request):
     return HttpResponse('У меня получилось!')
 
