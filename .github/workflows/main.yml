@@ -58,7 +58,7 @@ jobs:
         passphrase: ${{ secrets.PASSPHRASE }}
         script: |
           # Выполняет pull образа с DockerHub
-          sudo docker pull <имя-пользователя>/<имя-репозитория>
+          sudo docker pull promodern4/infra-project
           #остановка всех контейнеров
           sudo docker stop $(sudo docker ps -a -q)
-          sudo docker run --rm -d -p 5000:5000 <имя-пользователя>/<имя-репозитория>
+          sudo docker run --rm -d -p 5000:5000 promodern4/infra-project
